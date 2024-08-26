@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/login.html">
+  </head>
+  <body>
+    <header>
+      <div id="left-section">
+        <h1>Registration Form</h1>
+      </div>
+
+      <div id="right-section">
+        
+        <button> <a href="login.html">Login</a></button>
+      </div>
+    </header>
+
+    <form action="">
+   
+   <div class="container">
+        <fieldset>
+        <legend>
+            <label for="personalinfo">Personal Inormation</label>
+        </legend>
+
+        <label for="firstname">First Name</label><br/><br>
+      <input
+        type="text"
+        id="firstname"
+        name="first-name"
+        placeholder="First Name"
+      /><br /><br />
+      <label for="lastname">Last Name</label><br/><br>
+      <input
+        type="text"
+        id="lastname"
+        name="last-name"
+        placeholder="Last Name"
+      /><br /><br />
+      <label for="age">Age</label><br />
+      <input type="text" id="age" name="age" /><br /><br />
+      <label for="dob">Date of Birth</label><br />
+      <input type="date" id="dob" name="dob" /><br /><br />
+      <label for="gender">Gender</label><br /><br>
+      <input type="radio" id="gender" name="gender" value="male" />Male
+      <input type="radio" id="gender" name="gender" value="female" />Female
+      <br /><br />
+      <label for="nationality">Nationality</label><br><br>
+      <select>
+        <option value="pak">Pakistan</option>
+        <option value="USA">United States of America</option>
+        <optoion value="Canada">Canada</optoion>
+        <option value="UK">United Kingdom</option>
+        <option value="UAE">United Arab Emirates</option>
+        <option value="china">China</option>
+      </select><br><br>
+      <label for="education">Qualification</label><br><br>
+      <input type="checkbox" id="education" name="matric" value="Matriculation">Matriculation<br>
+      <input type="checkbox" id="education" name="inter" value="Intermediate">Intermediate<br>
+      <input type="checkbox" id="education" name="graduate" value="Graduation">Graduation<br>
+      <input type="checkbox" id="education" name="postgraduate" value="PostGraduation">Post-Graduation<br>
+     
+    </fieldset>
+</div>
+
+   <div class="container">
+      <fieldset>
+        <legend>
+          <label for="contact">Contact Details</label>
+        </legend>
+        <br /><br />
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="tel" id="mobile" name="mobileno"
+          pattern="+92-[0-9]{3}-[0-9]{7}"
+          placeholder="+92 300-1234567" maxlength="15" required>
+          <br><br>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="emailaddress" placeholder="Email" required>
+          <br><br>
+          
+          <label for="other">Alternate Contact Number </label>
+          <input
+            type="tel" id="other" name="therno"
+            pattern="+92-[0-1]{2}-[0-9]{7}"
+            placeholder="+92-21-1234567 " maxlength="14" required>
+            <br><br>
+      </fieldset>
+    </div>   
+
+    <div class="container">
+      <fieldset>
+        <legend>
+            <label for="document">Required Documents</label>
+        </legend><br><br>
+            <label>Upoad Documents</label>
+            <input type="file" id="document" name="degrees" value="file in pdf format"><br><br>
+            <label for="profilePicture">Select a Profile Picture</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+            <br><br>
+            <label for="portfolio">Portfolio Website</label>
+            <input type="url" id="porfolio "name="website" placeholder="https:\\"><br><br>
+           
+      </fieldset>
+    </div>
+      <br>
+      <br>
+
+      <button id="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
